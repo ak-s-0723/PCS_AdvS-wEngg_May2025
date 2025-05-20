@@ -14,7 +14,7 @@ import java.util.List;
 public class ProductController {
 
     @Autowired
-    @Qualifier("sps")
+    //@Qualifier("sps")
     private IProductService productService;
 
     @GetMapping("/products/{id}")

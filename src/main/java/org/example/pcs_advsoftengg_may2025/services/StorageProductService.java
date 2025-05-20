@@ -4,12 +4,14 @@ import org.example.pcs_advsoftengg_may2025.models.Category;
 import org.example.pcs_advsoftengg_may2025.models.Product;
 import org.example.pcs_advsoftengg_may2025.repos.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service("sps")
+@Primary
 public class StorageProductService implements IProductService {
 
     @Autowired
