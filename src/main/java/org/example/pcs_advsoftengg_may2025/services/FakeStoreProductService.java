@@ -21,4 +21,9 @@ public class FakeStoreProductService implements IProductService {
     public Product createProduct(String title, String description, String image, String category, double price) {
         return null;
     }
+
+    @Override
+    public Product getDetailsBasedOnUserScope(Long productId, Long userId) {
+        return null;
+    }
 }

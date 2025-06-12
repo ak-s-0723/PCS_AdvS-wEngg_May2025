@@ -31,6 +31,13 @@ public class ProductController {
         return productService.getAllProducts();
     }
 
+
+    @GetMapping("/products/{productId}/{userId}")
+    public Product getProductDetailsBasedOnUserScope(@PathVariable Long productId,
+                                                     @PathVariable Long userId) {
+       return productService.getDetailsBasedOnUserScope(productId,userId);
+    }
+
     @PostMapping("/products")
     public Product createProduct(@RequestBody CreateProductRequestDTO createProductRequestDTO){
         return productService.createProduct(createProductRequestDTO.getTitle(),

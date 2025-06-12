@@ -45,7 +45,7 @@ public class ProductControllerMvcTest {
         when(productService.getAllProducts()).thenReturn(productList);
 
         String expectedReponse = objectMapper.writeValueAsString(productList);
-
+        System.out.println(expectedReponse);
 
         mockMvc.perform(get("/products"))
                 .andExpect(status().isOk())

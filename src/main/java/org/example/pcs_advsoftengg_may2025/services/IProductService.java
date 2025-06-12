@@ -14,4 +14,7 @@ public interface IProductService {
                           String image,
                           String category,
                           double price);
+
+
+    Product getDetailsBasedOnUserScope(Long productId,Long userId);
 }
